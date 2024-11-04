@@ -1,20 +1,47 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello CertificationController!{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/style.css') }}" /> 
+{% endblock %}
+
+{% block title %}
+	Portfolio Mentions Légales | Emeric Grall
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/utilisateur/Documents/BTS/portfolio-symfony/src/Controller/CertificationController.php</code></li>
-        <li>Your template at <code>C:/Users/utilisateur/Documents/BTS/portfolio-symfony/templates/certification/index.html.twig</code></li>
-    </ul>
-</div>
+	<header>
+		<div class="container-top">
+			<h1>
+				<a href="/">Emeric Grall</a>
+			</h1>
+			<div class="ligne"></div>
+
+			<a href="/log.php" class="btn">Connection</a>
+		</div>
+
+
+		<div class="container-navbar">
+			<a href="/presentation">Présentation</a>
+			<a href="/competences">Compétences</a>
+			{# <a href="/cc.html">Projets</a>
+			<a href="/cc.html">Parcours</a> #}
+			<a href="/certification">Certification</a>
+			<a href="/veille-numerique">Veilles Numériques</a>
+			<a href="/contact">Contact</a>
+            <a href="/mention-legale">Mention Légales</a>
+		</div>
+	</header>
+
+	<div
+		class="container-main"><!-- contenu principal -->
+	</div>
+
+    <div class="container-">
+
+    </div>
+
+
+
 {% endblock %}
