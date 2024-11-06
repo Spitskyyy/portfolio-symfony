@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/style.css') }}" /> 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" /> 
 {% endblock %}
 
 {% block title %}
-	Portfolio Mentions Légales | Emeric Grall
+	Portfolio Présentaiton | Emeric Grall
 {% endblock %}
 
 {% block body %}
@@ -18,7 +18,7 @@
 			</h1>
 			<div class="ligne"></div>
 
-			<a href="/log.php" class="btn">Connection</a>
+			<a href="/log.php" class="btn">Connexion</a>
 		</div>
 
 
@@ -35,11 +35,11 @@
 	</header>
 
 	<div class="container-main">
-		<h1>A propos de moi</h1> {# // ajoute du margin pour bien le placer comment on fait deja ?  margin-top margin-left  ok merci#}
+		<h1>A propos de moi</h1> {#  ajoute du margin pour bien le placer comment on fait deja ?  margin-top margin-left  ok merci #}
 
-		 <div> {#la met une width et height avec un background comme jtai dit pour voir et utilise du flexbox pour placer comme tu veux tes elements oui ok  #}
+		 <div class="container-textmain"> {#la met une width et height avec un background comme jtai dit pour voir et utilise du flexbox pour placer comme tu veux tes elements oui ok  #}
 			<span>
-				je m'apelle Emeric Grall j'ai 20 ans, je suis étudiant en BTS SIO option SLAM au Lycée Notre Dame De La Providence a Avranches.
+				je m'apelle Emeric Grall j'ai 20 ans, je suis actuellement étudiant en BTS SIO option SLAM au Lycée Notre Dame De La Providence a Avranches.
 			</span> 
 		</div>
 	</div>
