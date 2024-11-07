@@ -1,25 +1,54 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" /> 
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
 {% endblock %}
 
 {% block title %}
-	Portfolio Présentaiton | Emeric Grall
+	Portfolio Présentaiton SLAM | Emeric Grall
 {% endblock %}
 
 {% block body %}
 
 
 	<div class="container-main">
-	<div class="container-titlemain">
-		<h1>A propos de moi</h1> {#  ajoute du margin pour bien le placer comment on fait deja ?  margin-top margin-left  ok merci #}
-	</div>
-		 <div class="container-textmain"> {#la met une width et height avec un background comme jtai dit pour voir et utilise du flexbox pour placer comme tu veux tes elements oui ok  #}
+		<div class="container-titlemain">
+			<h1>A propos de moi</h1>
+			{#  ajoute du margin pour bien le placer comment on fait deja ?  margin-top margin-left  ok merci #}
+		</div>
+		<div
+			class="container-textmain">
+			{#la met une width et height avec un background comme jtai dit pour voir et utilise du flexbox pour placer comme tu veux tes elements oui ok  #}
 			<span>
-				Je m'appelle Emeric Grall, j'ai 20 ans et je suis en seconde années d'un BTS SIO (Services informatiques aux organisations), au lycée Notre Dame De La Providence dans la spécialité SLAM(Solutions Logicielles et Applications Métiers ).
-				<br>De plus une option prépa pour me permettre de rejoindre une école d'ingenieur par la suite.
-			</span> 
-		
-	</div>
-{% endblock %}
+				<h1>Présentation</h1>
+				Bonjour,<br>
+				Je m'appelle Emeric Grall, j'ai 20 ans et je suis actuellement en deuxième année de BTS SIO (Services Informatiques aux Organisations) au lycée Notre Dame de La Providence, avec une spécialisation en SLAM (Solutions Logicielles et Applications Métiers).<br>
+				Cette formation me permet de développer des compétences en programmation, création d’applications, et gestion de bases de données, des domaines qui me passionnent particulièrement.<br>
+				En parallèle, j'ai choisi de suivre une option prépa intégrée, qui me prépare aux exigences d'une école d'ingénieur en informatique.<br>
+				Mon objectif est de poursuivre mes études dans une école d’ingénieurs après mon BTS afin de renforcer mon expertise technique et d'approfondir mes connaissances pour devenir ingénieur en développement logiciel.<br>
+			</span>
+		</div>
+
+	<div class="container-main">
+		<div class="container-titlemain">
+			<h1>Mon parcours</h1>
+			{#  ajoute du margin pour bien le placer comment on fait deja ?  margin-top margin-left  ok merci #}
+		</div>
+		<div
+			class="container-textmain">
+			{#la met une width et height avec un background comme jtai dit pour voir et utilise du flexbox pour placer comme tu veux tes elements oui ok  #}
+			<span>
+				<h3>Brevet</h3>
+				J'ai obtenue mon brevet au collége Francois-brune a pleine fougere<br>
+				<b>de 2015 à 2019</b><br>
+				<h3>Baccalauréat professionnel</h3>
+				J'ai obtenue mon Baccalauréat professionnel systèmes numériques a Saint-Malo<br>
+				<b>de 2020 à 2023</b><br>
+			</span>
+		</div>
+
+
+
+
+
+	{% endblock %}

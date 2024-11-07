@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
+{% endblock %}
+
+{% block title %}
+	Portfolio Présentaiton de la filaire | Emeric Grall
+{% endblock %}
+
+{% block body %}
+
+
+	<div class="container-main">
+		<div class="container-titlemain">
+			<h1>C'est quoi ma filaire ?</h1>
+			{#  ajoute du margin pour bien le placer comment on fait deja ?  margin-top margin-left  ok merci #}
+		</div>
+		<div
+			class="container-spe">
+			{#la met une width et height avec un background comme jtai dit pour voir et utilise du flexbox pour placer comme tu veux tes elements oui ok  #}
+
+
+			<h3 align="center">BTS SIO</h3>
+			<span>
+				Le <b class="shine2">BTS SIO</b> (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2 qui forme des techniciens en informatique spécialisés dans le développement et la gestion des systèmes d'information. <br>
+				Ce cursus, d'une durée de deux ans, est destiné aux étudiants souhaitant entrer rapidement dans le monde professionnel ou poursuivre leurs études en informatique.<br>
+                Il contient 2 cursus que je vais vous expliquer : <br>
+			</span>
+
+			<h3 align="center">L'Option SLAM</h3>
+			<span>
+				L’option <b class="shine2">Solutions logicielles et applications métier, forme des spécialistes des logiciels</b> (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).<br>
+				Les techniciens supérieurs en informatique option SLAM, sont préparés aux métiers de :
+				<br>
+				- Développeur d’applications informatiques
+				<br>
+				- Développeur informatique<br>
+				- Analyste d’applications ou d’études<br>
+				- Analyste programmeur<br>
+				- Programmeur analyste<br>
+				- Programmeur d’applications<br>
+				- Responsable des services applicatifs<br>
+				- Technicien d’études informatiques<br>
+			</span>
+
+
+			<h3 align="center">L'Option SISR</h3>
+			<span>
+				L’option <b class="shine2">Solution d’infrastructure systèmes et réseaux</b>, forme des professionnels des réseaux et équipements informatiques (installation, maintenance, sécurité).<br>
+				- Les techniciens supérieurs en informatique option SISR, peuvent accéder aux métiers de :
+				<br>
+				- Administrateur systèmes et réseaux<br>
+				- Informaticien support et déploiement<br>
+				- Pilote d’exploitation<br>
+				- Support systèmes et réseaux<br>
+				- Technicien d’infrastructure<br>
+				- Technicien de production<br>
+				- Technicien micro et réseaux<br>
+			</span>
+		</div>
+	</div>
+{% endblock %}
