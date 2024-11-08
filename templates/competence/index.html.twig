@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" /> 
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
 {% endblock %}
 
 {% block title %}
@@ -10,8 +10,19 @@
 
 {% block body %}
 
-	<div
-		class="container-main"><!-- contenu principal -->
+	<div class="container-main">
+		<div class="container-titlemain">
+			<h1>Mes compétences</h1>
+		</div>
+		<div class="row skills-parent">
+			<div class="col-6 col-sm-4 col-lg-2" data-aos="fade-up">
+				<div class="skills-card">
+					<div class="skills-img"><img src="/images/logo-css.png" alt="css"></div>
+					<div class="skills-name">
+						<p>css</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
 {% endblock %}
