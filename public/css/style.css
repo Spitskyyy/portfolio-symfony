@@ -3,6 +3,7 @@ body {
   font-family: "Roboto";
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 header {
@@ -85,7 +86,6 @@ header {
   box-shadow: 0px 8px 15px rgba(0, 0, 255, 0.3);
 }
 
-
 .btn:hover {
   opacity: 100%;
 }
@@ -120,7 +120,7 @@ header {
 
 .container-textmain{
   background-color: white;
-  height: 20vh;
+  height: 200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -131,10 +131,9 @@ header {
 
 .container-titlemain{
   /* background-color: green;  */
-  height: 10vh;
-  width: 100%;
+  display: block;
   margin-left: 20px;
-  gap:20px;
+  
 }
 
 .container-textmain span {
@@ -159,18 +158,40 @@ header {
   margin: 20px;
 }
 
-.shine{
-  color:white;
-  animation-name:glow;
-  animation-duration:1s;
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
+
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.shine2{
-  color:black;
-  animation-name:glow;
-  animation-duration:1s;
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
+.skill-card {
+  background-color: #ffffff;
+  width: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+} 
