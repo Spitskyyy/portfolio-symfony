@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-competences.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-navbar.css') }}"/>
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
 {% endblock %}
 
@@ -11,40 +13,38 @@
 {% block body %}
 
 
-<div class="container-main">
+	<div class="container-main">
+		<section class="skills-container">
+			<div class="skill-card">
+				<img src="images/logo-html.png" alt="HTML Icon">
+				<p>HTML</p>
+			</div>
+			<div class="skill-card">
+				<img src="images/logo-css.png" alt="CSS Icon">
+				<p>CSS</p>
+			</div>
+			<div class="skill-card">
+				<img src="images/logo-php.png" alt="PHP Icon">
+				<p>PHP</p>
+			</div>
+			<div class="skill-card">
+				<img src="images/logo-python.png" alt="Python Icon">
+				<p>Python</p>
+			</div>
+			<div class="skill-card">
+				<img src="images/logo-symfony.png" alt="Symfony Icon">
+				<p>Symfony</p>
+			</div>
+			<div class="skill-card">
+				<img src="images/logo-javascript.png" alt="JavaScript Icon">
+				<p>JavaScript</p>
+			</div>
+			<div class="skill-card">
+				<img src="images/logo-sql.png" alt="SQL Icon">
+				<p>SQL</p>
+			</div>
+		</div>
+	</section>
 
 
-<section class="skills-container">
-      <div class="skill-card">
-        <img src="images/html.png" alt="HTML Icon">
-        <p>HTML</p>
-      </div>
-      <div class="skill-card">
-        <img src="images/css.png" alt="CSS Icon">
-        <p>CSS</p>
-      </div>
-      <div class="skill-card">
-        <img src="images/javascript.png" alt="JavaScript Icon">
-        <p>JavaScript</p>
-      </div>
-      <div class="skill-card">
-        <img src="images/python.png" alt="Python Icon">
-        <p>Python</p>
-      </div>
-      <div class="skill-card">
-        <img src="images/java.png" alt="Java Icon">
-        <p>Java</p>
-      </div>
-      <div class="skill-card">
-        <img src="images/php.png" alt="PHP Icon">
-        <p>PHP</p>
-      </div>
-    </section>
-
-
-</div>
-
-
-
-
-	{% endblock %}
+{% endblock %}

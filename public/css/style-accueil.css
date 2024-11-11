@@ -1,4 +1,3 @@
-/* Body */
 body {
   margin: 0;
   font-family: "Roboto";
@@ -7,7 +6,6 @@ body {
   overflow: hidden;
 }
 
-/* Header */
 header {
   background-color: #1b1b38;
   height: 100vh;
@@ -19,10 +17,13 @@ header {
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.container-top a {
+  color: white;
+  text-decoration: none;
+}
 
-/* Main Container - Index */
 .container-index {
-  background-color: white;
+  background-color: #1d1d3b;   /*#1d1d3b */
   width: 100%;
   height: 100vh;
   color: black;
@@ -30,11 +31,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
-/* Main Container */
 .container-main {
-  background-color: white;
+  background-color: white; /*#222629*/
   width: 100%;
   height: 100vh;
   color: black;
@@ -44,41 +45,41 @@ header {
   align-items: right;
 }
 
-/* Text Main Container */
-.container-textmain {
+.container-textmain{
   background-color: white;
   height: 200px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   margin-left: 20px;
 }
 
-.container-titlemain {
+.container-titlemain{
+  /* background-color: green;  */
   display: block;
   margin-left: 20px;
+  
 }
 
 .container-textmain span {
   color: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
+
 }
 
-/* Divider */
 .ligne-maintext {
   background-color: black;
   width: 200px;
   height: 4px;
   border-radius: 25px;
-}
+} 
 
-/* Specialty Container */
-.container-spe {
+.container-spe{
   width: 100%;
   color: black;
   margin: 20px;
