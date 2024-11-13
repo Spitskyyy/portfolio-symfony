@@ -13,33 +13,35 @@
 
 {% block body %}
 
-	<main class="container-main">
-		<section class="certification-section">
-			<h1>Mes Certifications</h1>
 
+	<div class="container-main">
+		<div class="container-titlemain">
+			<h1>Mes Cerrtifications</h1>
+		</div>
+		<div class="container-spe">
+
+			<h3 align="center">Certification fini</h3>
 			<div class="certification-card" onclick="openModal()">
 				<img src="images/it-hardware.png" alt="Certification Image" class="certification-image">
 				<p>Certification it-hardware sur cisco networking academy</p>
 			</div>
-		</section>
-	</main>
 
-	<div id="modal" class="modal">
-		<div class="modal-content">
-			<span class="close-button" onclick="closeModal()">&times;</span>
-			<h2>Certification en Développement Web</h2>
-			<p>Cette certification m'a été utile pour revoir les bases du matériel informatique</p>
-		</div>
-	</div>
-	<div class="">
-		<h3>Certification en cours</h3>
-		<span>
-			Comme certification que je suis en train de poursuivre :
-			<br>
-			<br>
-			- Learn JavaScript sur CodeCademy<br>
-			- Learn CSS sur CodeCademt<br>
-			- Les modules MOOC sur SecNum academy<br>
-		</span>
-	</div>
-{% endblock %}
+			<h3 align="center">Certification en cours</h3>
+			<span>
+				Comme certification que je suis en train de poursuivre :
+				<br>
+				<br>
+				- Learn JavaScript sur CodeCademy<br>
+				- Learn CSS sur CodeCademt<br>
+				- Les modules MOOC sur SecNum academy<br>
+			</span>
+
+
+			<div id="modal" class="modal">
+				<div class="modal-content">
+					<span class="close-button" onclick="closeModal()">&times;</span>
+					<h2>Certification en Développement Web</h2>
+					<p>Cette certification m'a été utile pour revoir les bases du matériel informatique</p>
+				</div>
+			</div>
+		{% endblock %}
