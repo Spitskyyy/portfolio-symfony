@@ -22,7 +22,7 @@ header {
   text-decoration: none;
 }
 
-/* Section de certification */
+
 .certification-section h1 {
   font-size: 2em;
   color: #333;
@@ -54,7 +54,7 @@ header {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Modale */
+
 .modal {
   display: none;
   position: fixed;
@@ -88,7 +88,7 @@ header {
   color: #555;
 }
 
-/* Bouton de fermeture */
+
 .close-button {
   position: absolute;
   top: 10px;

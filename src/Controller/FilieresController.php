@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-class FilaireController extends AbstractController
+class FilieresController extends AbstractController
 {
-    #[Route('/filaire', name: 'app_filaire')]
+    #[Route('/filieres', name: 'app_filieres')]
     public function index(): Response
     {
-        return $this->render('filaire/index.html.twig', [
-            'controller_name' => 'FilaireController',
+        return $this->render('filieres/index.html.twig', [
+            'controller_name' => 'filieresController',
         ]);
     }
 }

@@ -1,4 +1,4 @@
-/* Body */
+
 body {
   margin: 0;
   font-family: "Roboto";
@@ -7,7 +7,7 @@ body {
   overflow: hidden;
 }
 
-/* Header */
+
 header {
   background-color: #1b1b38;
   height: 100vh;
@@ -20,7 +20,7 @@ header {
 }
 
 
-/* Main Container - Index */
+
 .container-index {
   background-color: white;
   width: 100%;
@@ -32,7 +32,6 @@ header {
   align-items: center;
 }
 
-/* Main Container */
 .container-main {
   background-color: white;
   width: 100%;
@@ -44,7 +43,7 @@ header {
   align-items: right;
 }
 
-/* Text Main Container */
+
 .container-textmain {
   background-color: white;
   height: 200px;
@@ -69,7 +68,7 @@ header {
   align-items: center;
 }
 
-/* Divider */
+
 .ligne-maintext {
   background-color: black;
   width: 200px;
@@ -77,7 +76,7 @@ header {
   border-radius: 25px;
 }
 
-/* Specialty Container */
+
 .container-spe {
   width: 100%;
   color: black;
