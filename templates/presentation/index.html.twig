@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-competences.css') }}"/>
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-navbar.css') }}"/>
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-cv.css') }}"/>
 {% endblock %}
 
 {% block title %}
@@ -33,35 +34,28 @@
 			</span>
 		</span>
 
-		<h3 align="center">Mon parcours</h3>
-		<span>
-			<h3>Brevet</h3>
-			J'ai obtenu mon brevet au collège Francois-brune à Pleine-Fougères<br>
-			<b>de 2015 à 2019</b><br>
-			<h3>Baccalauréat professionnel</h3>
-			J'ai obtenu mon Baccalauréat professionnel systèmes numériques à Saint-Malo<br>
-			<b>de 2020 à 2023</b><br>
-			<h3>BTS SIO</h3>
-			Actuellement en seconde année d'un BTS SIO option slam
-			<br>
-			<b>de 2023 à 2025</b><br>
-		</span>
-
+		<section id="CV-and-parcours">
+			<div id="parcours">
+				<h2>Mon parcours</h2>
+				<div class="parcours-item">
+					<h3>Brevet</h3>
+					<p>J'ai obtenu mon brevet au collège Francois-brune à Pleine-Fougères<br>de 2015 à 2019</p>
+				</div>
+				<div class="parcours-item">
+					<h3>Baccalauréat professionnel</h3>
+					<p>J'ai obtenu mon Baccalauréat professionnel systèmes numériques à Saint-Malo<br>de 2020 à 2023</p>
+				</div>
+				<div class="parcours-item">
+					<h3>BTS SIO</h3>
+					<p>Actuellement en seconde année d'un BTS SIO option SLAM<br>de 2023 à 2025</p>
+				</div>
+			</div>
+			<div id="cv-container">
+				<iframe src="images/CV_Emeric_Grall_2024.pdf" width="100%" height="600px" allowfullscreen frameborder="0"></iframe>
+				<hr>
+				<a href="images/CV_Emeric_Grall_2024.pdf" download="CV_Emeric_Grall">Télécharger mon CV</a>
+			</div>
+		</section>
 	</div>
-	{# TODO METTRE CV et lien filiaire #}
-
-	<section id="CV">
-      <iframe
-      src="images/CV_Emeric_Grall_2024.pdf"
-      width="100%" 
-      height="600px" 
-      allowfullscreen 
-      frameborder="0" 
-      ></iframe>
-      <hr>
-      <a href="images/CV_Emeric_Grall_2024.pdf" download="CV_Emeric_Grall">Télécharger mon CV</a>
-      </section>
-      <hr>
-
 
 {% endblock %}

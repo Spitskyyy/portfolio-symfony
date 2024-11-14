@@ -1,19 +1,45 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style-navbar.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-navbar.css') }}"/>
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
-		<link rel="stylesheet" type="text/css" href="{{ asset('css/style-certification.css') }}"/> 
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-certification.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-veillenumeriuque.css') }}"/>
 {% endblock %}
 
 {% block title %}
-	Portfolio Mentions Légales | Emeric Grall
+	Portfolio Veille-numerique | Emeric Grall
 {% endblock %}
 
 {% block body %}
 
-	<div
-		class="container-main"><!-- contenu principal -->
+	<div class="container-main">
+
+		<div class="row">
+    {% for article in articles|slice(0, 6) %}
+        <div class="col-md-4">
+            <div class="article-card">
+                {% if article.image %}
+                    <img src="{{ article.image }}" alt="Image de l'article">
+                {% endif %}
+                <div class="article-card-body">
+                    <h5>{{ article.title }}</h5>
+                    <!-- Ajout de la date de publication -->
+                    <p class="article-date">
+                        Publié le : {{ article.pubDate|date("d/m/Y") }}
+                    </p>
+                    <p>{{ article.description | slice(0, 150) }}...</p>
+                    <a href="{{ article.link }}" target="_blank">Lire l'article</a>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <p>Aucun article disponible pour le moment, les nouveaux vont bientôt arriver !</p>
+    {% endfor %}
+</div>
+
+
+
 	</div>
 
 {% endblock %}

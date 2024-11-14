@@ -3,7 +3,7 @@ body {
   font-family: "Roboto";
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 header {

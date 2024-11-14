@@ -1,12 +1,10 @@
-
 body {
   margin: 0;
   font-family: "Roboto";
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+   /* overflow: hidden; */
 }
-
 
 header {
   background-color: #1b1b38;
@@ -18,8 +16,6 @@ header {
   padding: 20px;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
 }
-
-
 
 .container-index {
   background-color: white;
@@ -42,7 +38,6 @@ header {
   justify-content: right;
   align-items: right;
 }
-
 
 .container-textmain {
   background-color: white;
@@ -68,14 +63,12 @@ header {
   align-items: center;
 }
 
-
 .ligne-maintext {
   background-color: black;
   width: 200px;
   height: 4px;
   border-radius: 25px;
 }
-
 
 .container-spe {
   width: 100%;

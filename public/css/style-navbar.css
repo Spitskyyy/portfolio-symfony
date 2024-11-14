@@ -3,7 +3,7 @@ body {
   font-family: "Roboto";
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 header {
@@ -78,7 +78,7 @@ header {
   opacity: 0.9;
   transition: opacity 200ms ease-in-out, box-shadow 200ms ease-in-out;
   cursor: pointer;
-  margin-top: auto; /* Ajouter du margin-top pour espacer le bouton en bas */
+  margin-top: 25px; /* Ajouter du margin-top pour espacer le bouton en bas */
 }
 
 .btn:hover {
@@ -89,4 +89,3 @@ header {
 .btn:hover {
   opacity: 100%;
 }
-

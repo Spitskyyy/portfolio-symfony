@@ -1,0 +1,85 @@
+/* Global Style */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Style */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #e1e5eb;
+    padding-bottom: 10px;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-top: 1.5em;
+    padding-bottom: 5px;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+}
+
+/* Section Content */
+.section-content {
+    margin-bottom: 1.5em;
+    padding-left: 10px;
+}
+
+p {
+    margin: 0.5em 0;
+    line-height: 1.7;
+}
+
+/* Contact Information */
+.contact-info {
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-left: 3px solid #3498db;
+    border-radius: 4px;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
