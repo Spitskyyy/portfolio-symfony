@@ -12,7 +12,7 @@ class VeilleNumeriqueController extends AbstractController
     public function index(): Response
     {
         // URL du flux RSS
-        $rssUrl = 'https://www.francetvinfo.fr/internet/securite-sur-internet.rss'; // Remplace par ton URL de flux RSS
+        $rssUrl = 'https://www.google.fr/alerts/feeds/07191991245695552641/5959140832944015005'; // Remplace par ton URL de flux RSS
 
         // Charger et analyser le flux RSS
         try {
