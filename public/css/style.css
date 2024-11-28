@@ -21,8 +21,9 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  align-items: right;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .container-textmain {
@@ -64,4 +65,8 @@ body {
 
 .container-spe a {
   color: black;
+}
+
+.container-top a{
+  color: white;
 }

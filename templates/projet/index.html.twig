@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+
+
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-certification.css') }}"/>
+	<script src="js/script.js"></script>
+{% endblock %}
+
+{% block title %}
+	Portfolio Certifications | Emeric Grall
+{% endblock %}
+
+{% block body %}
+
+	<div class="container-certif-global">
+
+
+		<header class="header">
+			<div class="container-top">
+				<h1>
+					<a href="/" class="titre">Emeric Grall</a>
+				</h1>
+				<div class="ligne-navbar"></div>
+
+				{# <a href="/log.php" class="btn">Connexion</a> #}
+			</div>
+
+			<div class="container-navbar">
+				<a href="/presentation" class="link-mentions">Présentation</a>
+				<a href="/competences" class="link-mentions">Compétences</a>
+				<a href="/projet">Projets</a>
+				{#<a href="/cc.html">Parcours</a> #}
+				<a href="/certification" class="link-mentions">Certification</a>
+				<a href="/veille-numerique" class="link-mentions">Veilles Numériques</a>
+				{# <a href="/contact">Contact</a> #}
+				<a href="/mention-legale" class="link-mentions">Mention Légales</a>
+
+			</div>
+			{% block javascripts %}
+				{% block importmap %}
+					{{ importmap('app') }}
+				{% endblock %}
+			{% endblock %}
+		</header>
+
+		<div class="container-certif">
+			<div class="certifications-container-titre">
+				<h1 class="certifications-titre">Mes Projets</h1>
+			</div>
+
+			<div class="certifications-container-fini">
+				<h1 class="certifications-titre-fini">Présentation des mes projet</h1>
+				<div class="certification-card" onclick="openModal()">
+					<img src="images/dolibarr.png" alt="Certification Image" class="certification-image">
+					<h2>Projet de mise à jour Atedi & Dolibarr (SLAM et SISR) - Atelier de professionnalisation</h2>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div>
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<span class="close-button" onclick="closeModal()">&times;</span>
+				<h2>Projet de mise à jour Atedi & Dolibarr (SLAM et SISR) - Atelier de professionnalisation</h2>
+				<p>Ce projet a pour objectif de mettre à jour Atedi (logiciel créé au sein de l'établissement) et Dolibarr (progiciel de gestion client)<br>
+					pour un client. Ce projet a été réalisé dans le cadre d’un atelier de professionnalisation en collaboration avec les filières SISR et SLAM.<br>
+					<a href=" https://kdrive.infomaniak.com/app/share/842951/6d1d52cc-bc98-47a9-92f9-639269f658d2">
+						Lien de ma documentation
+					</a>
+				</p>
+			</div>
+		</div>
+
+	</div>
+{% endblock %}
