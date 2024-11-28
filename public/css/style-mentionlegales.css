@@ -92,15 +92,7 @@ p {
   }
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto";
-  display: flex;
-  flex-direction: row;
-  /* overflow: hidden; */
-}
-
-header {
+.header {
   background-color: #1b1b38;
   height: 100vh;
   width: 350px;

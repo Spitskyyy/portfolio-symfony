@@ -45,37 +45,28 @@
 	</header>
 
 	<div class="container-certif">
-		<div class="container-titlemain">
-			<h1>Mes Certifications</h1>
+		<div class="certifications-container-titre">
+			<h1 class="certifications-titre">Mes Certifications</h1>
 		</div>
 
-		
-
-			<h3 align="center">Certification fini</h3>
+		<div class="certifications-container-fini">
+			<h1 class="certifications-titre-fini">Certifications Fini</h1>
 			<div class="certification-card" onclick="openModal()">
 				<img src="images/it-hardware.png" alt="Certification Image" class="certification-image">
 				<p>Certification it-hardware sur cisco networking academy</p>
 			</div>
 
-			<h3 align="center">Certification en cours</h3>
-			<span>
-				Comme certification que je suis en train de poursuivre :
-				<br>
-				<br>
-				- Learn JavaScript sur CodeCademy<br>
-				- Learn CSS sur CodeCademt<br>
-				- Les modules MOOC sur SecNum academy<br>
-			</span>
+		</div>
 
+		<div class="certifications-container-encours">
 
-			<div id="modal" class="modal">
-				<div class="modal-content">
-					<span class="close-button" onclick="closeModal()">&times;</span>
-					<h2>Certification en Développement Web</h2>
-					<p>Cette certification m'a été utile pour revoir les bases du matériel informatique</p>
-				</div>
-			</div>
-		
+			<h1 class="certifications-encours-titre">Certifications en cours</h1>
+			<ul class="liste-certifications">
+				<li class="li">Learn JavaScript sur CodeCademy</li>
+				<li class="li">Learn CSS sur CodeCademy</li>
+				<li class="li">Les modules MOOC sur SecNum academy</li>
+			</ul>
+		</div>
 	</div>
 </div>
 		{% endblock %}
