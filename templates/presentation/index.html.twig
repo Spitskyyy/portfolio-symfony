@@ -1,20 +1,49 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-competences.css') }}"/>
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-navbar.css') }}"/>
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-cv.css') }}"/>
 {% endblock %}
 
 {% block title %}
-	Portfolio Présentaiton | Emeric Grall
+	Portfolio Présentation | Emeric Grall
 {% endblock %}
 
 {% block body %}
 
 
-	<div class="container-main">
+
+<div class="container-cv-global">
+
+	<header class="header">
+		<div class="container-top">
+			<h1>
+				<a href="/" class="titre">Emeric Grall</a>
+			</h1>
+			<div class="ligne-navbar"></div>
+
+			<a href="/log.php" class="btn">Connexion</a>
+		</div>
+
+		<div class="container-navbar">
+			<a href="/presentation" class="link-mentions">Présentation</a>
+			<a href="/competences" class="link-mentions">Compétences</a>
+			{# <a href="/cc.html">Projets</a>
+													<a href="/cc.html">Parcours</a> #}
+			<a href="/certification" class="link-mentions">Certification</a>
+			<a href="/veille-numerique" class="link-mentions">Veilles Numériques</a>
+			{# <a href="/contact">Contact</a> #}
+			<a href="/mention-legale" class="link-mentions">Mention Légales</a>
+
+		</div>
+		{% block javascripts %}
+			{% block importmap %}
+				{{ importmap('app') }}
+			{% endblock %}
+		{% endblock %}
+	</header>
+
+
+	<div class="container-cv">
 		<div class="container-titlemain">
 			<h1>À propos de moi</h1>
 		</div>
@@ -32,7 +61,7 @@
 				En parallèle, j'ai choisi de suivre une option prépa intégrée, qui me prépare aux exigences d'une école d'ingénieur en informatique.<br>
 				Mon objectif est de poursuivre mes études dans une école d’ingénieurs après mon BTS afin de renforcer mon expertise technique et d'approfondir mes connaissances pour devenir ingénieur en développement logiciel.<br>
 			</span>
-		</span>
+		</div>
 
 		<section id="CV-and-parcours">
 			<div id="parcours">
@@ -57,5 +86,7 @@
 			</div>
 		</section>
 	</div>
+</div>
+
 
 {% endblock %}

@@ -13,35 +13,6 @@
 			<link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		{% endblock %}
 
-		{% block navbar %}
-
-			<header>
-				<div class="container-top">
-					<h1>
-						<a href="/">Emeric Grall</a>
-					</h1>
-					<div class="ligne-navbar"></div>
-
-					<a href="/log.php" class="btn">Connexion</a>
-				</div>
-
-				<div class="container-navbar">
-					<a href="/presentation">Présentation</a>
-					<a href="/competences">Compétences</a>
-					{# <a href="/cc.html">Projets</a>
-					<a href="/cc.html">Parcours</a> #}
-					<a href="/certification">Certification</a>
-					<a href="/veille-numerique">Veilles Numériques</a>
-					{# <a href="/contact">Contact</a> #}
-					<a href="/mention-legale">Mention Légales</a>
-				</div>
-				{% block javascripts %}
-					{% block importmap %}
-						{{ importmap('app') }}
-					{% endblock %}
-				{% endblock %}
-			</header>
-		{% endblock %}
 	</head>
 	<body>
 		{% block body %}{% endblock %}

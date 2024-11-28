@@ -1,22 +1,55 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-	    <link rel="stylesheet" type="text/css" href="{{ asset('css/style-navbar.css') }}" /> 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style-certification.css') }}"/>
+	    
+<link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}"/>
+
+  
 {% endblock %}
 
 {% block title %}
-	Portfolio Acceuil | Emeric Grall
+	Portfolio Accueil | Emeric Grall
 {% endblock %}
 
 {% block body %}
 
+<div class="container-index">
+	<header class="header">
+		<div class="container-top">
+			<h1>
+				<a href="/">Emeric Grall</a>
+			</h1>
+			<div class="ligne-navbar"></div>
 
-	<div class="container-index">
+			<a href="/log.php" class="btn">Connexion</a>
+		</div>
+
+		<div class="container-navbar">
+			<a href="/presentation">Présentation</a>
+			<a href="/competences">Compétences</a>
+			{# <a href="/cc.html">Projets</a>
+								<a href="/cc.html">Parcours</a> #}
+			<a href="/certification">Certification</a>
+			<a href="/veille-numerique">Veilles Numériques</a>
+			{# <a href="/contact">Contact</a> #}
+			<a href="/mention-legale">Mention Légales</a>
+		</div>
+		{% block javascripts %}
+			{% block importmap %}
+				{{ importmap('app') }}
+			{% endblock %}
+		{% endblock %}
+	</header>
+
+
+
+	<div class="container-bienvenue">
 		<h1>Emeric Grall</h1>
 		<div class="ligne-maintext"></div>
 		<h1>Bienvenue sur mon Portfolio</h1>
 	</div>
+
+</div>
+
 
 {% endblock %}

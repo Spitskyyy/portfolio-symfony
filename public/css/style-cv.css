@@ -1,57 +1,173 @@
 /* Conteneur principal pour "Mon parcours" et le CV */
 #CV-and-parcours {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Section "Mon parcours" */
 #parcours {
-    flex: 1;
-    margin-right: 20px;
+  flex: 1;
+  margin-right: 20px;
 }
 
 /* Conteneur pour le CV */
 #cv-container {
-    flex: 1;
-    max-width: 450px; /* Limite la largeur maximale du conteneur CV */
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  flex: 1;
+  max-width: 450px; /* Limite la largeur maximale du conteneur CV */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 /* Style pour l'iframe du CV */
 #cv-container iframe {
-    width: 100%; /* Laisse l'iframe occuper 100% du conteneur */
-    height: 400px; /* Hauteur réduite pour mieux s'intégrer */
-    border: 2px solid #3498db;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: box-shadow 0.3s ease;
+  width: 100%; /* Laisse l'iframe occuper 100% du conteneur */
+  height: 400px; /* Hauteur réduite pour mieux s'intégrer */
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
 }
 
 #cv-container iframe:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Bouton de téléchargement du CV */
 #cv-container a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 #cv-container a:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.container-spe {
+  width: 1000px;
+  padding: 20px;
+}
+
+.container-cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container-cv-global {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #1b1b38;
+  height: 100vh;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.titre {
+  text-decoration: none;
+  color: white;
+}
+
+.container-navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 90%;
+  height: 50px;
+  padding-left: 20px;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #252545;
+  transition: transform 200ms ease, background-color 200ms ease;
+}
+
+.container-navbar a:hover {
+  background-color: #383867;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ligne-navbar {
+  background-color: #e0e0e0;
+  width: 60%;
+  height: 3px;
+  border-radius: 25px;
+  margin: 20px 0;
+}
+
+.container-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  background-color: #4a4aff;
+  border: none;
+  height: 55px;
+  width: 180px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  transition: opacity 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  cursor: pointer;
+  margin-top: 25px; /* Ajouter du margin-top pour espacer le bouton en bas */
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 1;
+  box-shadow: 0px 8px 15px rgba(0, 0, 255, 0.3);
+}
+
+.btn:hover {
+  opacity: 100%;
 }

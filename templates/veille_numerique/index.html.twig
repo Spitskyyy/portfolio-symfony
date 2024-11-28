@@ -1,9 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-navbar.css') }}"/>
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-certification.css') }}"/>
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style-veillenumeriuque.css') }}"/>
 {% endblock %}
 
@@ -13,8 +10,39 @@
 
 {% block body %}
 
-	<div class="container-main">
 
+
+<div class="container-veille">
+        <header class="header">
+            <div class="container-top">
+                <h1>
+                    <a href="/" class="titre">Emeric Grall</a>
+                </h1>
+                <div class="ligne-navbar"></div>
+
+                <a href="/log.php" class="btn">Connexion</a>
+            </div>
+
+            <div class="container-navbar">
+                <a href="/presentation">Présentation</a>
+                <a href="/competences">Compétences</a>
+                {# <a href="/cc.html">Projets</a>
+                                                <a href="/cc.html">Parcours</a> #}
+                <a href="/certification">Certification</a>
+                <a href="/veille-numerique">Veilles Numériques</a>
+                {# <a href="/contact">Contact</a> #}
+                <a href="/mention-legale">Mention Légales</a>
+            </div>
+            {% block javascripts %}
+                {% block importmap %}
+                    {{ importmap('app') }}
+                {% endblock %}
+            {% endblock %}
+        </header>
+
+
+
+	<div class="container-articles">
 		<div class="row">
     {% for article in articles|slice(0, 6) %}
         <div class="col-md-4">
@@ -36,10 +64,12 @@
     {% else %}
         <p>Aucun article disponible pour le moment, les nouveaux vont bientôt arriver !</p>
     {% endfor %}
-</div>
+        </div>
 
 
 
 	</div>
+
+</div>
 
 {% endblock %}
