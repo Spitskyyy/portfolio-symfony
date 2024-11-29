@@ -177,3 +177,7 @@ p {
 .btn:hover {
   opacity: 100%;
 }
+
+.section-content a {
+  color: black;
+}
